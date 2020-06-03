@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div id="album-selection"></div>
+    <div id="album-photos"></div>
+    <div id="photo-comments"></div>
+</div>
+@section Scripts
+{
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            createAlbumSelect()
+        });
+    </script>
+}
